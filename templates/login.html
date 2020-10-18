@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="utf-8" />
+      <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no"
+      />
+      <meta name="description" content="" />
+      <meta name="author" content="" />
+
+      <title>@ig_pythoner121</title>
+
+      <!-- Bootstrap core CSS -->
+      <link
+        href="{{ url_for('static', filename='clean_blog/vendor/bootstrap/css/bootstrap.min.css') }}"
+        rel="stylesheet"
+      />
+
+      <!-- Custom fonts for this template -->
+      <link
+        href="{{ url_for('static', filename='clean_blog/vendor/font-awesome-free/css/font-awesome.min.css') }}"
+        rel="stylesheet"
+        type="text/css"
+      />
+      <link
+        href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic"
+        rel="stylesheet"
+        type="text/css"
+      />
+      <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
+        rel="stylesheet"
+        type="text/css"
+      />
+
+      <!-- Custom styles for this template -->
+      <link
+        href="{{ url_for('static', filename='clean_blog/css/clean-blog.min.css') }}"
+        rel="stylesheet"
+      />
+    </head>
+        <div class="container mt-5 text-center " style="*/ border:2px solid black; */background: #efefef;
+                                                                box-shadow:-6px 7px 15px 0px black;">
+             <form class="form-signin"  action="/login" method="post">
+              <h1 class="h3 mb-3 font-weight-normal">Admin login</h1>
+              <label class="sr-only ">User_name</label>
+              <input type="text" id="uname" name="uname" class="form-control" placeholder="Uname" required autofocus>
+              <label class="sr-only">Password</label>
+              <input type="password" id="pass" name="pass" class="form-control mt-4" placeholder="Password" required>
+              <div class="checkbox mb-3">
+                <label>
+                  <input type="checkbox" value="remember-me" class="mt-4"> Remember me
+                </label>
+              </div>
+                 <button class="btn btn-sm btn-primary p-l-3 p-r-3 mb-2" type="submit" class="text-light">Sign in</button>
+             </form>
+         </div>
+  </html>

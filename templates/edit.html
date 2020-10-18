@@ -1,0 +1,120 @@
+{% extends "layout.html" %}
+{% block body %}
+
+
+    <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="page-heading">
+          <h1>Edit & Add posts </h1>
+          <span class="subheading">...</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-md-10 mx-auto">
+      <!-- Contact Form - Enter your email address on line 19 of the mail/contact_me.php file to make this form work. -->
+      <!-- WARNING: Some web hosts do not allow emails to be sent through forms to common mail hosts like Gmail or Yahoo. It's recommended that you use a private domain email address! -->
+      <!-- To use the contact form, your site must be on a live web host with PHP! The form will not work locally! -->
+      <h3>Add Post </h3>
+      <form
+        name="sentMessage"
+        id="contactForm"
+        action="/edit/{{sno}}"
+        method="post"
+        novalidate
+      >
+        <div class="control-group">
+          <div class="form-group floating-label-form-group controls">
+            <label>title</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Title"
+              id="title"
+              name="title"
+              value="{{post.title}}"
+              required
+              data-validation-required-message=""
+            />
+            <p class="help-block text-danger"></p>
+          </div>
+        </div>
+        <div class="control-group">
+          <div class="form-group floating-label-form-group controls">
+            <label>tag_line</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="tagline"
+              id="tline"
+              name="tline"
+              value="{{post.tagline}}"
+              required
+              data-validation-required-message=""
+            />
+            <p class="help-block text-danger"></p>
+          </div>
+        </div>
+        <div class="control-group">
+          <div class="form-group col-xs-12 floating-label-form-group controls">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Slug"
+              id="text"
+              name="slug"
+              value="{{post.slug}}"
+              required
+              data-validation-required-message="Please enter your phone number."
+            />
+            <p class="help-block text-danger"></p>
+          </div>
+        </div>
+        <div class="control-group">
+          <div class="form-group floating-label-form-group controls">
+            <label>content</label>
+            <textarea
+              rows="5"
+              class="form-control"
+              placeholder="content"
+              id="content"
+              name="content"
+              required
+              data-validation-required-message=""
+            >{{post.content}}</textarea>
+            <p class="help-block text-danger"></p>
+          </div>
+        </div>
+          <div class="control-group">
+          <div class="form-group floating-label-form-group controls">
+            <label>img_file</label>
+            <input
+              rows="5"
+              class="form-control"
+              placeholder="img"
+              id="img"
+              name="img"
+              required
+              value="{{post.img_file}}"
+              data-validation-required-message=""
+            ></input>
+          </div>
+          </div>
+        <br/>
+        <div id="success">
+        <button type="submit" class="btn btn-success mb-5" id="sendMessageButton">
+         Submit
+        </button>
+        </div>
+      </form>
+     </div>
+    </div>
+</div>
+{%endblock%}

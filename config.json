@@ -1,0 +1,17 @@
+{
+  "params":
+  {
+    "local_server": "True",
+    "local_uri": "mysql+pymysql://root:@localhost/pythonblog",
+    "prod_uri": "mysql+pymysql://root:@localhost/pythonblog",
+    "blog_name" : "Fun Code",
+    "gmail_user": "anmolbuttar143205@gmail.com",
+    "gmail_password": "anmol@143",
+    "about_txt": "Hii my name is Anmol i am learning programing and i am seeking for job! i have also enough knowledge of 'HTML5' 'CSS3' 'BOOTSTRAP' 'SASS' ",
+    "no_of_posts": 2,
+    "admin_user": "pythoner121",
+    "admin_password": "987782",
+    "secret_key_for_session": "randhawa8512",
+    "upload_location": "C:\\py_projects\\project_flask1\\web_work_folder\\static\\UPLOAD_FOLDER\\"
+  }
+}
